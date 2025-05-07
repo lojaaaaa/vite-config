@@ -25,6 +25,13 @@ export default defineConfig([
     tseslint.configs.recommended,
     pluginReact.configs.flat.recommended,
     {
+        settings: {
+            react: {
+                version: "detect",
+            },
+        },
+    },
+    {
         rules: {
             // Base rules
             "react/react-in-jsx-scope": "off", // Не требовать import React from 'react'
